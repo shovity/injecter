@@ -1,0 +1,18 @@
+#injectString {
+  width: 200px;
+  height: 300px;
+  resize: none;
+  outline: none;
+  border: none;
+}
+
+.btn {
+  background: #009688;
+  color: #eee;
+  padding: 5px 10px;
+  border-radius: 3px;
+  float: right;
+  margin: 10px 0;
+  cursor: pointer;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}

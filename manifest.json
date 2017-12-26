@@ -1,0 +1,25 @@
+{
+  "name": "Injecter",
+  "description": "Inject something",
+  "version": "1.0",
+
+  "content_scripts": [
+     {
+      "matches": [ "http://*/*", "https://*/*", "file:///*" ],
+      "run_at": "document_start",
+      "js": [ "moduleLoader.js" ]
+    },
+    {
+      "matches": [ "http://*/*", "https://*/*", "file:///*" ],
+      "run_at": "document_end",
+      "js": [ "injectContent.js" ]
+    }
+  ],
+
+  "browser_action": {
+    "default_popup": "pop/pop.html"
+  },
+
+  "permissions": [ "activeTab" ],
+  "manifest_version": 2
+}
